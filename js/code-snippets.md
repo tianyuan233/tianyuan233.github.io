@@ -18,9 +18,8 @@ let data1 = data.reduce(function(d, line) {
 }, [])
 ```
 #### ASCII码转换
+ASCII码转换
 ```
 String.fromCharCode(65)   // A
 String.fromCharCode(97)   // A
 ```
-
-
