@@ -1,5 +1,5 @@
 - JavaScript
-  - [笔记](js/note.md)
+  - [笔记](js/note-base.md)
   - [代码块](js/code-snippets.md)
 
 - 效率

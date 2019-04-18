@@ -6,6 +6,8 @@
 在行内任意位置都可以ctrl + enter  
 #### 上方插入空行和上面的快捷键类似 
 ctrl + shift + enter
+#### 删除当前行
+ctrl + shift + k
 
 ### 插件
 
