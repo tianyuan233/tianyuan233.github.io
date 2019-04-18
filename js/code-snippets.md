@@ -17,9 +17,12 @@ let data1 = data.reduce(function(d, line) {
   return d
 }, [])
 ```
+#### 数组去重
+```
+[...new Set(arr)]
+```
 #### ASCII码转换
-ASCII码转换
 ```
 String.fromCharCode(65)   // A
-String.fromCharCode(97)   // A
+String.fromCharCode(97)   // a
 ```
