@@ -18,8 +18,10 @@
     window.$docsify = {
       name: 'wiki & note',
       repo: '',
+      basePath: 'https://tianyuan233.github.io/',
       search: {
         paths: 'auto', // or 'auto'
+        maxAge: 100,
         // 搜索标题的最大程级, 1 - 6
         depth: 6
       },
@@ -33,7 +35,7 @@
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
     }
   </script>
-  <!-- <script src="//unpkg.com/docsify"></script> -->
+  <script src="//unpkg.com/docsify"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
