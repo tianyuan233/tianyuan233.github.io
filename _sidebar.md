@@ -4,8 +4,11 @@
 
 - 效率
   - [VS Code](effective/vscode.md)
+
 - 工具
   - [网站](tools/site.md)
+- 记录
+  - [书单](record/book.md)
 - **Links**
 - [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16) Github](https://github.com/tianyuan233)
 - [![Twitter](https://icongram.jgog.in/simple/twitter.svg?colored&size=16) Twitter](http://twitter.com/tianyuanz1)
