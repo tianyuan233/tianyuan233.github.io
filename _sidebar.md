@@ -4,6 +4,7 @@
 
 - 效率
   - [VS Code](effective/vscode.md)
+  - [鼠标手势](effective/mouse.md)
 
 - 工具
   - [网站](tools/site.md)
