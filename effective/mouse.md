@@ -8,7 +8,7 @@ Strokeit
 斜向上： chrome新建窗口  
 斜向下： 最小化
 
-N:对应快捷键 ctrl + N 新建
-S:对应快捷键 ctrl + S 保存
-W:打开浏览器
+N:对应快捷键 ctrl + N 新建  
+S:对应快捷键 ctrl + S 保存  
+W:快速打开浏览器
 
