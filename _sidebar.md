@@ -8,6 +8,7 @@
 
 - 通识
   - [常见图片格式](generaledu/image.md)
+  - [编码](generaledu/encode.md)
 
 - 工具
   - [网站](tools/site.md)
