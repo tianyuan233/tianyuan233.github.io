@@ -4,6 +4,7 @@
 
 - 效率
   - [VS Code](effective/vscode.md)
+  - [Vim](effective/vim.md)
   - [鼠标手势](effective/mouse.md)
 
 - 通识
