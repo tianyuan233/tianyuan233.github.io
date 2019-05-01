@@ -2,19 +2,22 @@
   - [笔记](js/note-base.md)
   - [代码块](js/code-snippets.md)
 
+- CSS
+  - [笔记](css/note-base.md)
+- HTML
+  - [笔记](html/note-base.md)
 - 效率
   - [VS Code](effective/vscode.md)
   - [Vim](effective/vim.md)
   - [鼠标手势](effective/mouse.md)
-
 - 通识
   - [常见图片格式](generaledu/image.md)
   - [编码](generaledu/encode.md)
-
 - 工具
   - [网站](tools/site.md)
 - 记录
   - [书单](record/book.md)
+  - [article](record/article.md)
 - **Links**
 - [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16) Github](https://github.com/tianyuan233)  
 - [![Twitter](https://icongram.jgog.in/simple/twitter.svg?colored&size=16) Twitter](http://twitter.com/tianyuanz1)  

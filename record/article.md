@@ -1,0 +1,3 @@
+ - [怎样花两年时间去面试一个人](http://mindhacks.cn/2011/11/04/how-to-interview-a-person-for-two-years/)
+ - [十年学会编程](http://daiyuwen.freeshell.org/gb/misc/21-days-cn.html)
+ - [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)
