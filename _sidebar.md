@@ -4,8 +4,10 @@
 
 - CSS
   - [笔记](css/note-base.md)
+  
 - HTML
   - [笔记](html/note-base.md)
+  - [元素](html/element.md)
 - 效率
   - [GIT](effective/git.md)
   - [VS Code](effective/vscode.md)
@@ -16,6 +18,7 @@
   - [编码](generaledu/encode.md)
 - 工具
   - [网站](tools/site.md)
+  - [node工具](tools/nodetool.md)
 - 记录
   - [书单](record/book.md)
   - [article](record/article.md)
