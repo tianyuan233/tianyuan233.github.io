@@ -7,6 +7,7 @@
 - HTML
   - [笔记](html/note-base.md)
 - 效率
+  - [GIT](effective/git.md)
   - [VS Code](effective/vscode.md)
   - [Vim](effective/vim.md)
   - [鼠标手势](effective/mouse.md)
