@@ -8,6 +8,7 @@
 - HTML
   - [笔记](html/note-base.md)
   - [元素](html/element.md)
+  - [TIPS](html/tips.md)
 - 效率
   - [GIT](effective/git.md)
   - [VS Code](effective/vscode.md)
