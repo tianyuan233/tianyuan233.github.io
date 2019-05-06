@@ -10,6 +10,8 @@
 `ctrl + shift + k`
 #### 上下移动当前行
 `Alt+Up 或 Alt+Down`
+#### 选择语言模式
+`ctrl + k`,`m`
 
 ### 插件
  - Code Runner

@@ -69,3 +69,31 @@ HTML字符实体：一些会被html解析的符号，比如 "<",">"等
 #### 对空白字符的忽略
 默认情况下浏览器忽略文字与文字之间多于一个的空格，换行符会被全部忽略
 > 注： css可以改变这种行为
+------------------
+#### html注释
+`<!-- 注释 -->`
+
+----------
+#### ARIA
+相关链接 [ARIA](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA`)
+
+----
+#### HTML标签通用属性
+- id
+    + 整个页面唯一的值
+        * id=23
+        * id=a20
+        * id=lsdjf
+- class，类名
+    + 空格分隔的单词列表
+    + `class="article author-xieran class3"`
+- title
+    + 鼠标放上面的时候出现的tooltip
+    + 要打回车怎么办
+        * 直接在title里换行
+        * html实体
+- contenteditable
+    + true/false或者空相当于true
+- style
+    + 给可视元素的内联样式
+- tabindex="123"
