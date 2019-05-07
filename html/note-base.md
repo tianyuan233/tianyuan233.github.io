@@ -1,9 +1,10 @@
-### HTML
-超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言
 ### 相关链接
  - [MDN HTML元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
  - [元素分类](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_categories)
  - [ARIA](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA)
+
+### HTML
+超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言
 
 #### 语义化
 > **语义化**是前端开发里面的一个专用术语，其优点在于有助于构架良好的html结构，有利于搜索引擎的建立索引、抓取；另外，亦有利于页面在不同的设备上显示尽可能相同；此外，亦有利于构建清晰的机构，有利于团队的开发、维护。  
