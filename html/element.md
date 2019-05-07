@@ -1,3 +1,8 @@
+### 链接
+ - [MDN HTML元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
+ - [元素分类](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_categories)
+ - [ARIA](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA)
+
 ### html
 代表 HTML 或 XHTML 文档的根。其他所有元素必须是这个元素的子节点。
 ### head
@@ -345,6 +350,158 @@
     <input type="text" name="" id="">
 </fieldset>
 ```
+-------
 
+## 表格元素
+* table标签
+    - 这个标签以前经常用于做布局
+        + 什么是布局？即页面大区块的排列和摆放
+        + 为什么呢？因为table都是方方正正格子，了解后很容易控制
+            * 语义很差
+            * 可读性很差
+            * 可维护性也很差 maintainable
+            * 可访问性
+        + 但现在有了 css 之后，基本上只用table来显示数据，即表格本来的作用
+        + 熟悉 DIV+CSS 布局 JD Job Description
+    * caption
+        - 表格标题
+    * thead
+        - 表头
+        - 做为table的直接子元素
+        - 只能有一个
+        - 只有一个的情况下，即使出现在tbody的后面，其内容也会显示在tbody的前面
+        - 非要写多个的话，第一个以外的会当做tbody来处理
+    * tbody
+        - 表格主体
+        - 做为table的直接子元素
+        - 可以有多个
+    * tfoot
+        - 表尾
+        - 做为table的直接子元素
+        - 只能有一个
+        - 只有一个的情况即使出现在tbody的前面面，它的行也出现在tbody的后面
+        - 非要写多个的话，第一个以外的会当做tbody来处理
+    * tr
+        - table row cell
+        - 表格行
+        - 可以直接做为table的子元素，会被放入创建的tbody里面
+        - 或者做为上面三个标签(thead/tbody/tfoot)的子元素
+    * th
+        - table header cell
+        - 用在表头单元格
+        - 文字默认为加粗
+        - id用于被td元素引用以表示td所属的标题是哪一个
+            + 看例子
+    * td
+        - table data，表格数据单元格
+        - headers
+            + 表格头，值为某th的id，以表示这个数据的名称
+                * 方便读屏软件
+            + headers的值可以是多个以空格分隔的th的id的值，用法可能是th或td单元格跨行或跨列了
+        - 跨行跨列的单元格
+            + colspan 跨列
+            + rowspan 跨行
+    * col/colgroup 标签
+        - colgroup
+            + 用来分组col标签
+            + span属性，表示选择多列表格
+            + 有span时，不可再有子的col元素
+            + 大部分属性同col元素
+        - col
+            + 用来设置表格列的属性和样式
+            + span属性，表示选择多少列表格列，默认为1
+        - 可以单独使用，也可以被colgroup分组
+- 工具
+  - https://www.tablesgenerator.com/html_tables
 
+------
 
+### map
+* 映射标签
+* 通过 name属性 `name="somemap"`与img标签中的 `usemap="#somemap"` 绑定
+* 子元素
+  - area
+  - 属性
+    + href
+    + target
+    + alt
+    + 以上三个属性同a标签
+    + shape
+        * rect(angle)，矩形
+            - x1,y1,x2,y2
+        * circle，圆形
+            - cx,cy,r
+            - 圆心x，圆心y
+            - 半径r
+        * poly(gon)，多边形
+            - 至少6个值，表示一个多边形的若干个顶点
+    + coords coordinate
+        * 对应shape的几种图形的坐标
+* 工具
+  - https://www.image-map.net/
+
+### iframe
+* 表示嵌套的浏览上下文，有效地将另一个HTML页面嵌入到当前页面中。
+- 必须有开始标签和结束标签
+  + 可以在标签之间写上不支持此标签时的退化内容
+* 各种属性
+  - src
+  - name
+    + 提及a标签的target属性
+      * _self, _blank
+      * _top, _parent
+  - sandbox
+* webview
+* 它的跳转记录也会存在于浏览器的前进后退的记录里面
+
+### frameset
+- frame的集合
+- 已废弃
+
+### div
+ - 没有语义的标签， 通常使用class来表示该标签的“语义”
+ - ```html
+  <div class="footer"></div>
+  <div class="header"></div>
+  <div class="sidebar"></div>
+  <div class="navigation"></div>
+  <div class="wrapper container"></div>
+  <div class="content"></div>
+  <div class="main"></div>```
+
+### 其他常见标签
+* 下标 sub
+* 上标 sup
+* script
+    - `<script>js goes here</script>`
+    - `<script src=".././.././less.js">js not allowed</script>`
+    - 遇到`</script>`就结束
+* style
+    - `<style>css goes here</style>`
+    - `<link rel="stylesheet" href="a.css">`
+* 多媒体标签
+  - video
+  - audio
+* canvas
+    - 画布
+    - 必须有结束标签，内部写上不支持canvas的浏览器的提示性文字
+        + `<canvas><p>您的浏览器不支持canvas</p></canvas>`
+    * width/height 属性与css的width/height是不一样的
+        * 如果不同的话图片会被拉伸
+    * 默认是透明的
+* progress
+    * max
+    * value
+    * 相关文章
+      * http://www.zhangxinxu.com/wordpress/2013/02/html5-progress-element-style-control/
+      * https://css-tricks.com/html5-progress-element/
++ meta
+  * encoding
+  * viewport
+  * keywords
+  * author
+  * description
++ link
+  * 引入 css
+  * 引入 页面的图标
+    * favicon.ico

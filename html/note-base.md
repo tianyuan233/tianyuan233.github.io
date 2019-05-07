@@ -1,11 +1,26 @@
 ### HTML
 超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言
+### 相关链接
+ - [MDN HTML元素参考](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element)
+ - [元素分类](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_categories)
+ - [ARIA](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA)
 
 #### 语义化
 > **语义化**是前端开发里面的一个专用术语，其优点在于有助于构架良好的html结构，有利于搜索引擎的建立索引、抓取；另外，亦有利于页面在不同的设备上显示尽可能相同；此外，亦有利于构建清晰的机构，有利于团队的开发、维护。  
 
 一句话总结就是 合适的地方(位置)用合适的标签  
-相关链接： https://github.com/zhanyouwei/blog-source/issues/6
+增强可维护性， 可读性  
+相关链接： https://github.com/zhanyouwei/blog-source/issues/6  
+新增的一些语义化标签  
+- article
+- section  div
+- aside
+- header
+- footer
+- nav(igate)
+- main
+- template
+- ...
 
 -----
 #### DOCTYPE
@@ -14,6 +29,8 @@ doctype 位于文档第一行，doctype不是html标签，而是一种标准通�
 ```html
 <!DOCTYPE html>
 ```
+让浏览器以最新的标准来解析这个页面
+
 ----
 #### HTML属性
 * 每一个标签可以接受一个或多个属性
@@ -47,20 +64,20 @@ doctype 位于文档第一行，doctype不是html标签，而是一种标准通�
 HTML字符实体：一些会被html解析的符号，比如 "<",">"等  
 一个HTML Entity都含有2种转义格式：Entity Name 和 Entity Number。表示方法通常为 以 & 开头以 ; 结尾
  - Entity Name
-    - \< 表示为 "\&lt;"
-    - \> 表示为 "\&gt;"
- - Entity Number
+    - \< 表示为 \&lt;
+    - \> 表示为 \&gt;
+ - Entity Number 
 
- **常见的HTML字符实体**
+**常见的HTML字符实体**
 
 | Character|Entity Name	 |
-|----------|-------------|
-| space	　　| \&nbsp;	    |
-|#	　　　　| \&num;	     |
-|&	　　　　| \&amp;	     |
-|版权符&copy;	| \&copy;	   |
-|单引号	　　　　| \&apos;	  |
-|双引号　　　　| \&quot;	  |
+|---------- |-------------|
+|space	　　  | \& nbsp ;	    |
+|#	　　　　      | \& num;	     |
+|&	　　　　     | \& amp;	     |
+|版权符&copy;	   | \& copy;	   |
+|单引号	　　　　  | \& apos;	  |
+|双引号　　　　   | \& quot;	  |
 
 相关文档：
   * Google： html entity
