@@ -4,6 +4,7 @@
 
 - CSS
   - [笔记](css/note-base.md)
+  - [注意点](css/notice.md)
   
 - HTML
   - [笔记](html/note-base.md)
