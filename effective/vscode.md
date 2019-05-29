@@ -18,6 +18,10 @@
  - HTML Snippets
  - JavaScript (ES6) code snippets
  - GitLens
+ - Easy Sass
+    - 轻量插件 将sass/scss 自动编译为css
+ - Live Server
+    - 实时预览已修改的 html及css效果
 
 ### 主题
 Atom Material Theme
