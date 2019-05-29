@@ -15,7 +15,7 @@
   - [GIT](effective/git.md)
   - [VS Code](effective/vscode.md)
   - [Vim](effective/vim.md)
-  - [鼠标手势](effective/mouse.md)
+  - [其他工具](effective/tool.md)
 - 通识
   - [常见图片格式](generaledu/image.md)
   - [编码](generaledu/encode.md)
