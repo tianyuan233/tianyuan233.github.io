@@ -5,7 +5,7 @@
 ```
 指定id属性的 属性选择器对总特殊性贡献了 0,0,1,0
 
-### 媒体查询(media quaries)的书写顺序
+### 响应式布局 媒体查询(media quaries)的书写顺序 
 ```css
 @media (min-width: 768px){ //>=768的设备 }
 @media (min-width: 992px){ //>=992的设备 }
@@ -17,4 +17,40 @@
 @media (max-width: 1199px){ //<=1199的设备 }
 @media (max-width: 991px){ //<=991的设备 }
 @media (max-width: 767px){ //<=768的设备 }
+```
+### 闭合浮动
+way.1 触发BFC
+```
+  overflow: hidden/auto/scroll;
+  display: inline-block/table-cell/table/flow-root;
+  position: absolute/fixed;
+  float: left;
+
+```
+way.2 clearfix加伪元素
+```css
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+```
+```html
+<div class="clearfix">...</div>
+```
+way.3 Bootstrap中使用的(sass)
+```
+// Mixin itself
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Usage as a mixin
+.element {
+  @include clearfix;
+}
 ```

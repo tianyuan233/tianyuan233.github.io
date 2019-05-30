@@ -5,6 +5,8 @@
 - CSS
   - [笔记](css/note-base.md)
   - [注意点](css/notice.md)
+  - [布局](css/layout.md)
+  - [flex](css/flex.md)
   - [伪类](css/pseudo-class.md)
   
 - HTML
