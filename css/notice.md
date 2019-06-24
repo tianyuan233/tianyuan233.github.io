@@ -54,3 +54,29 @@ way.3 Bootstrap中使用的(sass)
   @include clearfix;
 }
 ```
+### 文字溢出后显示为省略号
+```css
+div {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+```
+### 伪元素插入换行符
+```css
+div:before {
+  content: "asdadasdasd\000A asdasd";
+  white-space: pre;
+}
+```
+### 元素对鼠标点击不生效
+```css
+a {
+  pointer-events:none;
+}
+```
+### 无法被选中
+```
+user-select: none;
+```
