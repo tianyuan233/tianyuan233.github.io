@@ -55,3 +55,25 @@ function delNodeFromList(head, value) {
 }
 console.log(delNodeFromList({ value: 1, next: { value: 2, next: { value: 5, next: null } } },2))
 ```
+#### 链表反转
+```js
+var reverseList = function (head) {
+  if (!head) {
+    return head
+  }
+
+  var res = {
+    val: head.val,
+    next: null
+  }
+
+  while(head.next) {
+    head = head.next
+    res = {
+      val:head.val,
+      next:res
+    }
+  }
+  return res
+};
+```
