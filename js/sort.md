@@ -48,3 +48,23 @@ function mergeSort(array) {
 
 console.log(mergeSort([1,2,7,3,8,9]))
 ```
+#### 快速排序
+```js
+function quickSort(array) {
+  if (array.length < 2) {
+    return array
+  }
+  var basic = array[0]
+  var left = []
+  var right = []
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < basic) {
+      left.push(array[i])
+    } else {
+      right.push(array[i])
+    }
+  }
+  return quickSort(left).concat(basic, quickSort(right))
+}
+console.log(quickSort([5, 1, 2, 3, 4, 6, 7, 8, 9]))
+```
