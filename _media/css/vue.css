@@ -827,7 +827,7 @@ body {
 .markdown-section pre {
   -moz-osx-font-smoothing: initial;
   -webkit-font-smoothing: initial;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
   margin: 1.2em 0;
   overflow: auto;
   padding: 0 0;
