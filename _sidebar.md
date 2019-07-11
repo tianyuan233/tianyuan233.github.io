@@ -1,5 +1,8 @@
+- 数据结构
+  - [链表](data-structure/linked-list.md)
+  - [二叉树](data-structure/binary-tree.md)
+
 - JavaScript
-  - [数据结构](js/data-structure.md)
   - [笔记](js/note-base.md)
   - [代码块](js/code-snippets.md)
   - [排序](js/sort.md)
