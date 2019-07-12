@@ -1,4 +1,3 @@
-### 二叉树
 #### 二叉树转数组
 ```js
 function treeToArr(root) {
@@ -25,7 +24,6 @@ function treeToArr2(root) {
   if (root) {
     var res = [root.val]
     var nodes = [root]
-
     while (nodes.length) {
       curr = nodes.shift()
       if (curr.left) {
@@ -34,7 +32,6 @@ function treeToArr2(root) {
       } else{
         res.push(null)
       }
-
       if (curr.right) {
         res.push(curr.right.val)
         nodes.push(curr.right)
@@ -50,11 +47,9 @@ function treeToArr2(root) {
 #### 数组转二叉树
 ```js
 function arrToTree(arr) {
-
   if (arr.length == 0) {
     return null
   }
-
   var root = {
     val: arr[0],
     left: null,

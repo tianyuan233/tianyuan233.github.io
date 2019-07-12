@@ -1,4 +1,3 @@
-### 链表
 #### 数组转链表
 ```js
 function arrToList(arr) {
