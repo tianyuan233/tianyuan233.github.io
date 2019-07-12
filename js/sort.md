@@ -68,3 +68,38 @@ function quickSort(array) {
 }
 console.log(quickSort([5, 1, 2, 3, 4, 6, 7, 8, 9]))
 ```
+#### 选择排序
+```js
+function selectSort(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = i; j < arr.length; j++) {
+      if (arr[i] > arr[j]) {
+        [arr[i], arr[j]] = [arr[j], arr[i]]
+      }
+    }
+  }
+  return arr
+}
+```
+#### 插入排序
+```js
+function insertSort(arr) {
+  for (var i = 1; i < arr.length; i++) {
+    var key = arr[i]
+    //
+    console.log('key',key)
+    console.log('sortPart',arr.slice(0,i))
+    //
+    for (var j = 0; j < i; j++) {
+      if (key < arr[j]) {
+          arr.splice(j,0,key)
+          console.log('insert',arr)
+          arr.splice(i+1,1)
+          console.log('delete',arr)
+          break
+      }
+    }
+  }
+  return arr
+}
+```
