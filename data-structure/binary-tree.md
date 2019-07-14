@@ -1,3 +1,4 @@
+### 转换
 #### 二叉树转数组
 ```js
 function treeToArr(root) {
@@ -93,4 +94,50 @@ function arrToTree(arr) {
 
 }
 var arr = [1,2,null,3,4,null,5,null,null,6,7,null,8,9]
+```
+### 遍历
+#### 前序遍历 PreOrder
+```js
+var preorderTraversal = function (root) {
+  var res = []
+  function order(root) {
+    if (root) {
+      res.push(root.val)
+      order(root.left)
+      order(root.right)
+    }
+  }
+  order(root)
+  return res
+};
+```
+#### 中序遍历 InOrder
+```js
+var inorderTraversal = function (root) {
+  var res = []
+  function order(root) {
+    if (root) {
+      order(root.left)
+      res.push(root.val)
+      order(root.right)
+    }
+  }
+  order(root)
+  return res
+};
+```
+#### 后序遍历 PostOrder
+```js
+var postorderTraversal = function (root) {
+  var res = []
+  function order(root) {
+    if (root) {
+      order(root.left)
+      order(root.right)
+      res.push(root.val)
+    }
+  }
+  order(root)
+  return res
+};
 ```
