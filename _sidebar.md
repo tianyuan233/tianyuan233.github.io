@@ -1,11 +1,12 @@
 - 数据结构
   - [链表](data-structure/linked-list.md)
   - [二叉树](data-structure/binary-tree.md)
+  - [排序](data-structure/sort.md)
 
 - JavaScript
   - [笔记](js/note-base.md)
   - [代码块](js/code-snippets.md)
-  - [排序](js/sort.md)
+  - [原型及原型链](js/prototype.md)
 
 - CSS
   - [笔记](css/note-base.md)
@@ -35,4 +36,3 @@
   - [article](record/article.md)
 - **Links**
 - [![Github](https://icongram.jgog.in/simple/github.svg?color=808080&size=16) Github](https://github.com/tianyuan233)  
-- [![Twitter](https://icongram.jgog.in/simple/twitter.svg?colored&size=16) Twitter](http://twitter.com/tianyuanz1)  
