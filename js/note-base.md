@@ -68,4 +68,21 @@ p = new Person()
 p instanceof Person
 true
 ```
+### 错误处理与调试
+```js
+function testFinally(){
+	try {
+		return 2;
+	} catch (error){
+		return 1;
+	} finally {
+		return 0;
+	}
+}
+
+testFinally()   //输出 0
+```
+可以在catch语句中使用instanceof操作符处理不同类型的错误
+#### 抛出错误
+throw
 
