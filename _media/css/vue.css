@@ -69,7 +69,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #34495e;
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0;
   margin: 0;
   overflow-x: hidden;
@@ -887,18 +887,19 @@ body {
 .markdown-section pre {
   -moz-osx-font-smoothing: initial;
   -webkit-font-smoothing: initial;
-  background-color: #f8f8f8;
+  /* background-color: #011627; */
+  /* background-color: #f8f8f8; */
   font-family: 'Roboto Mono', Monaco, courier, monospace;
   line-height: 1.5rem;
   margin: 1.2em 0;
   overflow: auto;
-  padding: 0 1.4rem;
+  /* padding: 0 1.4rem; */
   position: relative;
   word-wrap: normal;
 }
 
 /* code highlight */
-.token.comment,
+/* .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
@@ -992,14 +993,125 @@ body {
 
 .token.entity {
   cursor: help;
+} */
+code[class*=language-],
+pre[class*=language-] {
+  color: #fff;
+  background: none;
+  font-family: Operator Mono, Menlo, Monaco, source-code-pro, Courier New, monospace;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none
+}
+
+pre[class*=language-] {
+  overflow: auto;
+  padding: 1em
+}
+
+pre[class*=language-]::selection {
+  background: #27292a
+}
+
+pre[class*=language-]::selection,
+pre[class*=language-] ::selection {
+  text-shadow: none;
+  background: hsla(0, 0%, 100%, .15)
+}
+
+:not(pre)>code[class*=language-] {
+  border-radius: .3em;
+  background: rgba(255, 229, 100, .2);
+  color: #1a1a1a;
+  padding: .15em .2em .05em;
+  white-space: normal
+}
+
+.token.attr-name {
+  color: #addb67
+}
+
+.token.attr-name,
+.token.comment {
+  font-family: Operator Mono Italic
+}
+
+.token.comment {
+  color: #637777
+}
+
+.token.string,
+.token.url {
+  color: #addb67
+}
+
+.token.variable {
+  color: #d6deeb
+}
+
+.token.number {
+  color: #f78c6c
+}
+
+.token.builtin,
+.token.char,
+.token.constant,
+.token.function {
+  color: #82aaff
+}
+
+.token.punctuation {
+  color: #c792ea
+}
+
+.token.doctype,
+.token.selector {
+  color: #c792ea;
+  font-family: Operator Mono Italic
+}
+
+.token.class-name {
+  color: #ffcb8b;
+  font-family: Operator Mono Italic
+}
+
+.token.keyword,
+.token.operator,
+.token.tag {
+  color: #ffa7c4
+}
+
+.token.boolean {
+  color: #ff5874
+}
+
+.token.property {
+  color: #80cbc4;
+  font-family: Operator Mono Italic
+}
+
+.token.namespace {
+  color: #b2ccd6
 }
 
 .markdown-section pre>code {
   -moz-osx-font-smoothing: initial;
   -webkit-font-smoothing: initial;
-  background-color: #f8f8f8;
-  border-radius: 2px;
-  color: #525252;
+  background-color: #011627;
+  border-radius: 5px;
+  color: #fff;
   display: block;
   font-family: 'Roboto Mono', Monaco, courier, monospace;
   font-size: 0.8rem;
@@ -1007,7 +1119,7 @@ body {
   margin: 0 2px;
   max-width: inherit;
   overflow: inherit;
-  padding: 2.2em 5px;
+  padding: 1em 5px;
   white-space: inherit;
 }
 

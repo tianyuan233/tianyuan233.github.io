@@ -1,31 +1,19 @@
-### apply bind call 
+### apply call 
 ```js
 function add(a,b) {
   return a + b
 }
-
-add(1,2)
-3
-```
-#### apply
-```js
-add.apply(null,[1,2])
-3
-```
-#### bind
-```js
-var f = add.bind(null,5)
-undefined
-f(2)
-7
 ```
 #### call
+call() 方法使用一个指定的 this 值和单独给出的一个或多个参数来调用一个函数。
 ```js
 add.call(null,1,2)
 3
-add.call(null,1,2,3)
-3
-add.call(null,1,2,4)
+```
+#### apply
+apply() 方法调用一个具有给定this值的函数，以及作为一个数组（或类似数组对象）提供的参数。
+```js
+add.apply(null,[1,2])
 3
 ```
 ### 类型判断
