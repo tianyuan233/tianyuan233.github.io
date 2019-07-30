@@ -71,9 +71,10 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 }
 ```
 #### flex-shrink
-缩放
-#### flex-basis
 
+#### flex-basis
+ - 如果没有设置flex-basis属性，那么flex-basis的大小就是项目的width属性的大小
+ - 如果没有设置width属性，那么flex-basis的大小就是项目内容(content)的大小
 #### align-self
 子元素在交叉轴上的对齐
 ```

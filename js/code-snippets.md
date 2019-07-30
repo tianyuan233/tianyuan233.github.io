@@ -1,3 +1,10 @@
+#### 字符串切片可使用负值
+```js
+'qwertyui'.slice(-1)
+> "i"
+'qwertyui'.slice(0,-1)
+> "qwertyu"
+```
 #### 数组求和
 ```javascrpit
 let sumA = A.reduce((sum, ele) => { 
