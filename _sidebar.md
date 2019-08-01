@@ -7,6 +7,7 @@
   - [笔记](js/note-base.md)
   - [代码块](js/code-snippets.md)
   - [原型及原型链](js/prototype.md)
+  - [正则表达式](js/regexp.md)
 
 - CSS
   - [笔记](css/note-base.md)
