@@ -1,3 +1,23 @@
+#### 解构
+数组解构
+```js
+a = 1;b = 2 
+[a,b] = [b,a]
+a //2
+b //1
+
+[name,age] = ['qwe',18]
+name  //"qwe"
+age //18
+```
+对象解构
+```js
+const {PI} = Math
+PI  //3.141592653589793
+
+const {log} = console
+log('azazaz') //azazaz
+```
 #### 字符串切片可使用负值
 ```js
 'qwertyui'.slice(-1)
