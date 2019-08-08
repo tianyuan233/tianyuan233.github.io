@@ -97,6 +97,7 @@ var arr = [1,2,null,3,4,null,5,null,null,6,7,null,8,9]
 ```
 ### 遍历
 #### 前序遍历 PreOrder
+递归版
 ```js
 var preorderTraversal = function (root) {
   var res = []
@@ -109,6 +110,28 @@ var preorderTraversal = function (root) {
   }
   order(root)
   return res
+};
+```
+非递归版
+```js
+var preorderTraversal = function (root) {
+  var result = []
+  var stack = []
+  var p = root
+  while (true) {
+    while (p) {
+     result.push(p.val)
+     stack.push(p)
+     p = p.left
+    }
+    if (stack.length == 0) {
+      break
+    }
+    var node = stack.pop()
+    console.log(result)
+    p = node.right
+  }
+  return result
 };
 ```
 #### 中序遍历 InOrder
@@ -166,28 +189,6 @@ var postorderTraversal = function (root) {
   return res
 };
 ```
-非递归版
-```js
-var postorderTraversal = function (root) {
-  var result = []
-  var stack = []
-  var p = root
-  while (true) {
-    while (p) {
-      stack.push(p)
-      p = p.right
-    }
-    if (stack.length == 0) {
-      break
-    }
-    var node = stack.pop()
-    result.push(node.val)
-    console.log(result)
-    p = node.left
-  }
-  return result
-};
-```
 ### 二叉树搜索
 ```js
 var searchBST = function (root, val) {
@@ -207,34 +208,17 @@ var searchBST = function (root, val) {
 ```
 ### 二叉树合并
 ```js
-/**
- * Definition for a binary tree node.
- * function TreeNode(val) {
- *     this.val = val;
- *     this.left = this.right = null;
- * }
- */
-/**
- * @param {TreeNode} t1
- * @param {TreeNode} t2
- * @return {TreeNode}
- */
 var mergeTrees = function (t1, t2) {
-
   if (!t1 && !t2) {
     return null;
   }
-
   if (!t1||!t2){
     return t1 || t2
   }
-
-
   let root = new TreeNode(t1.val + t2.val)
 
   root.left = mergeTrees(t1.left, t2.left)
   root.right = mergeTrees(t1.right,t2.right)
-
   return root
 };
 ```
