@@ -112,6 +112,7 @@ var preorderTraversal = function (root) {
 };
 ```
 #### 中序遍历 InOrder
+递归版
 ```js
 var inorderTraversal = function (root) {
   var res = []
@@ -126,7 +127,31 @@ var inorderTraversal = function (root) {
   return res
 };
 ```
+非递归版
+```js
+var inorderTraversal = function (root) {
+  var result = []
+  var stack = []
+  var p = root
+  while (true) {
+    while (p) {
+      stack.push(p)
+      p = p.left
+    }
+    // console.log(stack)
+    if (stack.length == 0) {
+      break
+    }
+    var node = stack.pop()
+    result.push(node.val)
+    console.log(result)
+    p = node.right
+  }
+  return result
+};
+```
 #### 后序遍历 PostOrder
+递归版
 ```js
 var postorderTraversal = function (root) {
   var res = []
@@ -139,6 +164,28 @@ var postorderTraversal = function (root) {
   }
   order(root)
   return res
+};
+```
+非递归版
+```js
+var postorderTraversal = function (root) {
+  var result = []
+  var stack = []
+  var p = root
+  while (true) {
+    while (p) {
+      stack.push(p)
+      p = p.right
+    }
+    if (stack.length == 0) {
+      break
+    }
+    var node = stack.pop()
+    result.push(node.val)
+    console.log(result)
+    p = node.left
+  }
+  return result
 };
 ```
 ### 二叉树搜索
